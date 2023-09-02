@@ -1,13 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link'
 
-import MainNav from "@/components/main-nav";
-import Container from "@/components/ui/container";
-import NavbarActions from "@/components/navbar-actions";
-import getCategories from "@/actions/get-categories";
-import { IoIosPulse } from "react-icons/io";
+import MainNav from '@/components/main-nav'
+import Container from '@/components/ui/container'
+import NavbarActions from '@/components/navbar-actions'
+import getCategories from '@/actions/get-categories'
+import { IoIosPulse } from 'react-icons/io'
 
 const Navbar = async () => {
-  const categories = await getCategories();
+  const categories = await getCategories()
 
   return (
     <div className="border-b">
@@ -22,7 +22,7 @@ const Navbar = async () => {
         </div>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
