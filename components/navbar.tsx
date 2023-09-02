@@ -15,7 +15,7 @@ const Navbar = async () => {
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
             <p className="font-bold text-2xl">Pulse Rack</p>
-            <IoIosPulse className="mr-2 h-9 w-9" />
+            <IoIosPulse className="mr-2 my-auto h-9 w-9" />
           </Link>
           <MainNav data={categories} />
           <NavbarActions />
